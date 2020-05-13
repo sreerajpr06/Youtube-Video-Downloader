@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    
+    <title>Youtube Downloader...</title>
+    
+{% endblock %}
+
+{% block body %}
+
+    <h1>Youtube Video Downloader</h1>    
+
+    <div class="content">
+        <form action='/resChoose/ ' method='POST'>
+            <legend>Title : {{title}}</legend><br>
+            <label for="URL">URL of the video : </label>
+            <input type="url" value="{{link}}" name="URL" id="URL" readonly><br>
+            <label for="res">Enter the resolution of the video :</label>
+            <select name="res" id="res">
+                <option value="">Choose an option</option>
+                {% for r in res %}
+                <option value="{{r}}">{{r}}</option>
+                {% endfor %}
+            </select><br>
+            <button type="submit">Download</button>
+        </form>
+    </div>
+{% endblock %}

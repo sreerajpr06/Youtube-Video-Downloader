@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <title>Youtube Downloader</title>
+    
+{% endblock  %}
+
+{% block body %}
+    
+    <h1>Youtube Video Downloader</h1>   
+
+    <div class="content"> 
+        <form method='POST' action='/'>
+            <label for="URL">Enter the url of the video : </label><br>
+            <input type="url" name="URL" id="URL" placeholder="https://www.youtube.com/watch?v=k-HdGnzYdFQ"><br>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+
+{% endblock %}

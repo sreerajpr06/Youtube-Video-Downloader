@@ -1,0 +1,50 @@
+body{
+    background-color: #222831;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 200%;
+    padding: 0.5% 0.5% 0.5% 2%;
+    text-align: left;
+}
+
+label{
+    font-size: 150%;
+    margin : 8px 0;
+}
+
+legend {
+    font-size: 150%;
+    margin : 8px 0;
+}
+
+input, select{
+    background-color: #dddddd;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button{
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    font-family: sans-serif;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}  
+
+div{
+    border-radius: 5px;
+    background-color: #30475e;
+    padding: 20px; 
+}
